@@ -3,7 +3,7 @@ package redis_zap
 import (
 	"context"
 	"fmt"
-	"github.com/go-redis/redis/v8"
+	"github.com/go-redis/redis/v9"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"

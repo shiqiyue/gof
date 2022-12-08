@@ -1,6 +1,7 @@
 package loggers
 
 import (
+	"github.com/go-redis/redis/v9"
 	"github.com/shiqiyue/gof/loggers/redis_zap"
 	"io"
 	"os"
