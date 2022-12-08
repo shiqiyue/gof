@@ -4,7 +4,7 @@ import (
 	"context"
 	errors2 "errors"
 	"fmt"
-	"github.com/go-redis/redis/v8"
+	"github.com/go-redis/redis/v9"
 	"time"
 )
 

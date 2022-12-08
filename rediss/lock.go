@@ -4,8 +4,7 @@ import (
 	"context"
 	"errors"
 	"gitee.com/shiqiyue/redislock"
-	"github.com/go-redis/redis/v8"
-	"time"
+	"github.com/go-redis/redis/v9"
 )
 
 // redis分布式锁
@@ -34,12 +33,12 @@ func NewLocker(moduleName string, client redis.UniversalClient, defaultOptions *
 }
 
 // 获取锁对象
-func (l *Locker) GetLock(ctx context.Context, key string, ttl time.Duration, options *redislock.Options) (*redislock.Lock, error) {
+func (l *Locker) GetLock(ctx context.Context, key string, options *redislock.Options) (*redislock.Lock, error) {
 	op := l.defaultOptions
 	if options != nil {
 		op = options
 	}
-	return l.LockerClient.Obtain(ctx, l.getKey(key), ttl, op)
+	return l.LockerClient.Obtain(ctx, l.getKey(key), op)
 }
 
 func (l *Locker) getKey(key string) string {
