@@ -3,6 +3,7 @@ package middle
 import (
 	"context"
 	"fmt"
+	"github.com/go-redis/redis/v9"
 	"github.com/shiqiyue/gof/caches"
 	"time"
 )

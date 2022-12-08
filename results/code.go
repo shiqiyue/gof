@@ -4,11 +4,11 @@ package results
 
 var (
 	// 失败
-	FAIL int = 500
+	FAIL = 500
 	// 不使用0,0为空值
 
 	// 成功
-	SUCCESS int = 200
+	SUCCESS = 200
 	// 资源找不到
-	NOT_FOUND int = 404
+	NOT_FOUND = 404
 )

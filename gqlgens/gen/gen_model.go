@@ -21,7 +21,7 @@ func (c *GenContext) fullModelName() string {
 func (c GenContext) modelDirective() *ast.Directive {
 	return &ast.Directive{
 		Name: "goModel",
-		Arguments: []*ast.Argument{&ast.Argument{
+		Arguments: []*ast.Argument{{
 			Name: "model",
 			Value: &ast.Value{
 				Raw:  c.fullModelName(),

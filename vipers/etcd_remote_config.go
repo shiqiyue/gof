@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/shiqiyue/gof/loggers"
+	clientv3 "go.etcd.io/etcd/client/v3"
 	"go.uber.org/zap"
 	"io"
 	"io/ioutil"

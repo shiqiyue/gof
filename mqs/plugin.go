@@ -2,7 +2,7 @@ package mqs
 
 import "context"
 
-var plugins []Plugin = make([]Plugin, 0)
+var plugins = make([]Plugin, 0)
 
 func RegisterPlugin(plugin Plugin) {
 	plugins = append(plugins, plugin)

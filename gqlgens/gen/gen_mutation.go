@@ -9,7 +9,7 @@ func (c *GenContext) genMuation() {
 	}
 	def.Fields = make([]*ast.FieldDefinition, 0)
 	// 添加
-	addArguments := []*ast.ArgumentDefinition{&ast.ArgumentDefinition{
+	addArguments := []*ast.ArgumentDefinition{{
 		Name: "req",
 		Type: ast.NonNullNamedType(c.addReqName(), nil),
 	}}
@@ -21,7 +21,7 @@ func (c *GenContext) genMuation() {
 	}
 	def.Fields = append(def.Fields, addMutation)
 	// 修改
-	editArguments := []*ast.ArgumentDefinition{&ast.ArgumentDefinition{
+	editArguments := []*ast.ArgumentDefinition{{
 		Name: "req",
 		Type: ast.NonNullNamedType(c.editReqName(), nil),
 	}}
@@ -33,7 +33,7 @@ func (c *GenContext) genMuation() {
 	}
 	def.Fields = append(def.Fields, editMutation)
 	// 删除
-	removeArguments := []*ast.ArgumentDefinition{&ast.ArgumentDefinition{
+	removeArguments := []*ast.ArgumentDefinition{{
 		Name: "id",
 		Type: ast.NonNullNamedType("Int", nil),
 	}}

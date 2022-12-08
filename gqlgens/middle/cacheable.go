@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/99designs/gqlgen/graphql"
+	"github.com/go-redis/redis/v9"
 	"github.com/shiqiyue/gof/caches"
 	"github.com/shiqiyue/gof/loggers"
 	"github.com/shiqiyue/gof/reflects"

@@ -8,7 +8,7 @@ import (
 
 type JobFunc func(ctx context.Context) error
 
-var jobs map[string]*jobWrapper = make(map[string]*jobWrapper, 0)
+var jobs = make(map[string]*jobWrapper, 0)
 
 // 注册任务
 func RegisterJob(jobName string, jobFunc JobFunc) {

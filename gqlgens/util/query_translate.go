@@ -159,7 +159,7 @@ func (t QueryTranslator) AggregateWithQueryString(rs interface{}, queryStrings [
 	// 将结果设置到rs中
 	if len(results) == 1 {
 		// 转换结果格式为嵌套map
-		var formatResults map[string]interface{} = make(map[string]interface{}, 0)
+		var formatResults = make(map[string]interface{}, 0)
 		for columnAlias, queryValue := range results[0] {
 			attrs := strings.Split(columnAlias, ".")
 			attrlen := len(attrs)

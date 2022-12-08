@@ -9,7 +9,7 @@ import (
 	"text/template"
 )
 
-var sqlCache *sync.Map = &sync.Map{}
+var sqlCache = &sync.Map{}
 
 type RawSql struct {
 	Id  string

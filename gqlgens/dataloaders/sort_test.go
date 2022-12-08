@@ -38,23 +38,23 @@ type testStruct struct {
 
 func testGetExample() []*testStruct {
 	return []*testStruct{
-		&testStruct{
+		{
 			ID:   1,
 			Name: "a",
 		},
-		&testStruct{
+		{
 			ID:   3,
 			Name: "a",
 		},
-		&testStruct{
+		{
 			ID:   5,
 			Name: "b",
 		},
-		&testStruct{
+		{
 			ID:   7,
 			Name: "b",
 		},
-		&testStruct{
+		{
 			ID:   9,
 			Name: "b",
 		},

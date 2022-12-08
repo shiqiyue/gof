@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	injectGraph *inject.Graph = &inject.Graph{}
+	injectGraph = &inject.Graph{}
 )
 
 // 将对象注册到injectGraph

@@ -7,7 +7,7 @@ import (
 
 type FieldInterceptor func(ctx context.Context, fields []zapcore.Field) []zapcore.Field
 
-var fieldInterceptors []FieldInterceptor = make([]FieldInterceptor, 0)
+var fieldInterceptors = make([]FieldInterceptor, 0)
 
 func ClearFieldInterceptor() {
 	fieldInterceptors = make([]FieldInterceptor, 0)
